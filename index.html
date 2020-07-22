@@ -6,54 +6,64 @@
 	    <title>Module3-solution by DarthSid1603</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-	    <link rel="stylesheet"  href="css/styles.css">
+	    <link rel="stylesheet" href="css/styles.css">
     
 	</head>
 	<body>
 		<header>
-			<nav id = "header-nav" class="navbar navbar-default">
+			<nav id="header-nav" class="navbar navbar-default">
 				<div class="container-fluid">
-					<div class="navbar-header">
+					<div class="navbar-header ">
 						<div class="navbar-brand">
-							<h1>Food, LLC</h1>
+							<a href="index.html"><h1>FOOD, LLC</h1></a>
 						</div>
-
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<!-- <span class="d-block d-sm-none"> -->
+						<button type="button" class="navbar-toggle collapsed d-block d-sm-none" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
+						<!-- </span> -->
 					</div>
 
-					<div id="collapsable-nav" class="collapse navbar-collapse">
-						<ul id="nav-list" class="nav navbar-nav navbar-right">
-							<li>Chicken</li>
-							<li>Beef</li>
-							<li>Paneer</li>
+					<div id="collapsable-nav" class="collapse navbar-collapse visible-xs">
+						<ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+							<li>
+							<a href="#Chicken">Chicken</a>
+							</li>
+							<li>
+							<a href="#Beef">Beef</a>
+							</li>
+							<li>
+							<a href="#Paneer">Paneer</a>
+							</li>
 						</ul><!-- #nav-list -->
 					</div><!-- .collapse .navbar-collapse -->
 				</div><!-- .container -->
-			</nav>
+			</nav><!-- #header-nav -->
 		</header>
 
 		<h2 class="text-center"> Our Menu </h2>
+		<div id="main-content" class="container">
+			<div id="Chicken">
+				<div class="content-title">Chicken</div>
+				<p>Sed tristique, mauris vel fringilla dapibus, magna massa cursus mauris, vitae efficitur ante augue sed nisl. Integer nulla magna, ullamcorper vel cursus vel, finibus scelerisque odio. Suspendisse tellus eros, dapibus ac justo id, ultricies volutpat velit. Donec dignissim risus id condimentum accumsan. Quisque porttitor urna sed diam vulputate elementum. Quisque est nisl, eleifend ac lacinia eget, egestas quis dui. Suspendisse non lectus pulvinar dui finibus gravida. Mauris a blandit ante, at imperdiet dui. Curabitur sit amet tempus lacus. Donec luctus ante eu arcu dapibus, ut semper tellus ullamcorper. Nulla euismod quis justo id condimentum. Maecenas sem nisl, malesuada id molestie at, pellentesque sit amet purus. Donec placerat ligula ut diam blandit tempus. Etiam scelerisque vehicula arcu et aliquam. Cras libero purus, hendrerit a semper at, lacinia eu libero. </p>
+			</div>
 
-		<div id="Chicken" class="container">
-			
-		</div>
+			<div id="Beef">
+				<div class="content-title">Beef</div>
+				<p>Sed tristique, mauris vel fringilla dapibus, magna massa cursus mauris, vitae efficitur ante augue sed nisl. Integer nulla magna, ullamcorper vel cursus vel, finibus scelerisque odio. Suspendisse tellus eros, dapibus ac justo id, ultricies volutpat velit. Donec dignissim risus id condimentum accumsan. Quisque porttitor urna sed diam vulputate elementum. Quisque est nisl, eleifend ac lacinia eget, egestas quis dui. Suspendisse non lectus pulvinar dui finibus gravida. Mauris a blandit ante, at imperdiet dui. Curabitur sit amet tempus lacus. Donec luctus ante eu arcu dapibus, ut semper tellus ullamcorper. Nulla euismod quis justo id condimentum. Maecenas sem nisl, malesuada id molestie at, pellentesque sit amet purus. Donec placerat ligula ut diam blandit tempus. Etiam scelerisque vehicula arcu et aliquam. Cras libero purus, hendrerit a semper at, lacinia eu libero. </p>
+			</div>
 
-		<div id="Beef" class="container">
-			
-		</div>
-
-		<div id="Paneer" class="container">
-			
-		</div>
-
+			<div id="Paneer">
+				<div class="content-title">Paneer</div>
+				<p>Sed tristique, mauris vel fringilla dapibus, magna massa cursus mauris, vitae efficitur ante augue sed nisl. Integer nulla magna, ullamcorper vel cursus vel, finibus scelerisque odio. Suspendisse tellus eros, dapibus ac justo id, ultricies volutpat velit. Donec dignissim risus id condimentum accumsan. Quisque porttitor urna sed diam vulputate elementum. Quisque est nisl, eleifend ac lacinia eget, egestas quis dui. Suspendisse non lectus pulvinar dui finibus gravida. Mauris a blandit ante, at imperdiet dui. Curabitur sit amet tempus lacus. Donec luctus ante eu arcu dapibus, ut semper tellus ullamcorper. Nulla euismod quis justo id condimentum. Maecenas sem nisl, malesuada id molestie at, pellentesque sit amet purus. Donec placerat ligula ut diam blandit tempus. Etiam scelerisque vehicula arcu et aliquam. Cras libero purus, hendrerit a semper at, lacinia eu libero. </p>
+			</div>
+		</div> <!-- end of main content -->
 
 		<!-- jQuery (Bootstrap JS plugins depend on it) -->
-		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/script.js"></script>	
 	</body>
